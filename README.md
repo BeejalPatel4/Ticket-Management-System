@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+#  🎫 Ticket Management System
+A frontend-only Ticket Management System built with **Next.js (App Router)**, **TypeScript**, and **React Hook Form**. Users can create, view, update, filter, and delete support tickets with persistence via LocalStorage.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository: ```bash git clone https://github.com/your-username/ticket-management-system.git cd ticket-management-system
+## 🚀 Setup Instructions
+      ### Prerequisites - Node.js **18.20.8**
+       - npm **10.8.2**
+       - Git (for version control)
+## Acknowledgements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛠️ Key Design Decisions
+Next.js  App Router  
+Chosen for modern routing, layout support, and scalability.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TypeScript  
+Provides type safety and clearer contracts for ticket objects.
 
-## Learn More
+React Hook Form  
+Used for reactive forms with validation and controlled inputs.
 
-To learn more about Next.js, take a look at the following resources:
+Custom Hook (useTickets)  
+Encapsulates ticket CRUD logic, filtering, and persistence in one place.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+LocalStorage Persistence  
+Simple, frontend-only persistence without backend dependencies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Component-based Architecture
 
-## Deploy on Vercel
+TicketForm → Create/Edit tickets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+TicketList → Render ticket collection
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+TicketCard → Individual ticket display
+
+TicketFilters → Search and filter controls
+
+Responsive UI  
+CSS grid and flex layouts ensure usability across desktop and mobile.
